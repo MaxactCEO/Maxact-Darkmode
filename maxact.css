@@ -376,7 +376,7 @@ text-align: center;
 /* Ny stil för de mest frekventa vanorna */
 #frequentHabitsContainer {
   display: none; /* Dold initialt */
-  margin-top: -167px;
+  margin-top: -127px;
   margin-bottom: -115px;
   display: center;
   margin: center; /* Mellanrum och centrerat */
