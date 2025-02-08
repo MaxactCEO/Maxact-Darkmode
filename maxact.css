@@ -379,7 +379,7 @@ text-align: center;
 /* Ny stil för de mest frekventa vanorna */
 #frequentHabitsContainer {
   display: block; /* Visa initialt */
-  margin-top: -30px;
+  margin-top: -40px;
   margin-left: 0px;
   margin-bottom: -50px;
   padding-bottom: 10px;
