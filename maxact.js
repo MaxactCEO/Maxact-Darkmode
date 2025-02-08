@@ -1,30 +1,4 @@
-// Ladda Google Charts
-google.charts.load('current', {
-    'packages': ['corechart']
-  });
-  
-  google.charts.setOnLoadCallback(drawChart);
-  
-  function drawChart() {
-    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1Uj6zHJDj8G3qEFwAR830AX63SpzJWaeGIDtUMo14XWA/gviz/tq?sheet=Pearson%20korrelation');
-    query.send(handleQueryResponse);
-  }
-  
-  function handleQueryResponse(response) {
-    if (response.isError()) {
-      console.log('Error: ' + response.getMessage() + ' ' + response.getDetailedMessage());
-      return;
-    }
-  
-    var data = response.getDataTable();
-    var options = {
-      title: 'Exempelgraf',
-      height: 300
-    };
-  
-    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
+
   
   // Repost funktionalitet
   
