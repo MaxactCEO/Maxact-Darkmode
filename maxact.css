@@ -580,6 +580,7 @@ style.innerHTML += `
   padding: 20px; /* Lägg till lite utrymme runt innehållet */
   border-radius: 0px;
   margin-top: 10px; /* Lite marginal överst */
+  margin-bottom: 10px;
   height: 800px;
   position: fixed; /* Placera formuläret absolut */
   top: 0; /* Justera efter behov */
