@@ -1,8 +1,7 @@
 html, body {
-  height: 2000px;
-  overflow: auto; /* Tillåt skrollning */
-  margin: 0; /* Ta bort standardmarginaler */
-  padding: 0; /* Ta bort standardpadding */
+  height: 500;
+  margin: 25px; /* Ta bort standardmarginaler */
+  padding: 25px; /* Ta bort standardpadding */
 }
 
 /* Grundläggande stil för body */
@@ -152,9 +151,9 @@ h2, p {
 
 /* Grafstilar */
 #graphCanvas{
-  width: 360px;
-  height: 200px;
-  margin-bottom: 20px;
+  width: 355px;
+  height: 190px;
+  margin-bottom: 40px;
   border-radius: 0px;
   overflow: hidden;
 }
