@@ -295,8 +295,9 @@ input[type="submit"]:hover {
   margin-top: 10px;
 }
 
-.Kategori{
+}.Kategori{
   margin-top: 10px;
+  height: 40px;
 }
 
 
