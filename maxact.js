@@ -1,6 +1,4 @@
-
-  
-  // Repost funktionalitet
+// Repost funktionalitet
   
   let recentHabits = JSON.parse(localStorage.getItem('recentHabits')) || []; // Ladda från localStorage
   let isDropdownVisible = false; // För att spåra visibilitet av rullgardinsmenyn
@@ -275,6 +273,51 @@
     return details;
   }
   
+  function scrollToBottom() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  }
+
+  function myFunction() {
+    var visaVanor = document.getElementById("VisaVanor");
+    var showForm = document.getElementById("ShowForm");
+    var myMenu = document.getElementById("myMenu");
+    var addHabitButton = document.querySelector("button[onclick='Form()']");
+    var repostContainer = document.getElementById("repostContainer");
+    var searchContainer = document.querySelector(".search-container");
+  
+    if (visaVanor.classList.contains("hidden")) {
+      visaVanor.classList.remove("hidden");
+      visaVanor.classList.add("visible");
+      showForm.classList.remove("hidden");
+      showForm.classList.add("visible");
+      myMenu.classList.remove("hidden");
+      myMenu.classList.add("visible");
+      addHabitButton.classList.remove("hidden");
+      addHabitButton.classList.add("visible");
+      repostContainer.classList.remove("hidden");
+      repostContainer.classList.add("visible");
+      searchContainer.classList.remove("hidden");
+      searchContainer.classList.add("visible");
+      scrollToBottom(); // Scroll to bottom when showing
+    } else {
+      visaVanor.classList.remove("visible");
+      visaVanor.classList.add("hidden");
+      showForm.classList.remove("visible");
+      showForm.classList.add("hidden");
+      myMenu.classList.remove("visible");
+      myMenu.classList.add("hidden");
+      addHabitButton.classList.remove("visible");
+      addHabitButton.classList.add("hidden");
+      repostContainer.classList.remove("visible");
+      repostContainer.classList.add("hidden");
+      searchContainer.classList.remove("visible");
+      searchContainer.classList.add("hidden");
+    }
+  }
+  
   document.addEventListener("DOMContentLoaded", () => {
     renderRecentHabits();
     showFrequentHabits(); // Visa frekventa vanor direkt
@@ -309,6 +352,12 @@
     // Dölj statistik initialt
     document.getElementById("habitStatsContainer").style.display = "none";
     document.getElementById("frequentHabitsContainer").style.display = "block"; // Visa frekventa vanor
+
+    const scrollButton = document.querySelector('button[onclick="myFunction()"]');
+    scrollButton.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent any other click handlers from running
+      scrollToBottom();
+    });
   });
   
   let habitUsageCount = JSON.parse(localStorage.getItem('habitUsageCount')) || {};
