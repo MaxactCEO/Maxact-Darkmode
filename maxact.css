@@ -190,7 +190,6 @@ label, p {
   font-family: Arial, Helvetica, sans-serif;
   display: block;
   padding: 5px;
-  height: 40px;
   margin-top: 10px;
   font-size: 15px;
 }
@@ -248,7 +247,6 @@ select {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   height: 40px; /* Fix height to 40px */
-
 }
 
 textarea {
@@ -295,7 +293,7 @@ input[type="submit"]:hover {
   margin-top: 10px;
 }
 
-}.Kategori{
+.Kategori{
   margin-top: 10px;
   height: 40px;
 }
