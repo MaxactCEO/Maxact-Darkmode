@@ -255,7 +255,7 @@
         details = `${mostFrequentHabit["Vad tränade du"]} - ${mostFrequentHabit["Hur länge varade träningen"]}min`;
         break;
       case "Sömn":
-        details = `${mostFrequentHabit["Sömn"]} - ${mostFrequentHabit["Antal timmar du sov"]} tim`;
+        details = `${mostFrequentHabit["Vilken typ av sömn"]} - ${mostFrequentHabit["Sömn timmar"]} tim`;
         break;
       case "Fysisk aktivitet":
         details = `${mostFrequentHabit["Fysisk Aktivitet"]} - ${mostFrequentHabit["Antal Kilometer"]}km`;
